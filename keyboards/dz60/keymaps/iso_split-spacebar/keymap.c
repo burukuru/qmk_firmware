@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         UK_TAB ,   UK_Q,      UK_W,      UK_E,      UK_R,      UK_T,      UK_Y,      UK_U,      UK_I,      UK_O,      UK_P,      UK_LBRC,   UK_RBRC,
         UK_LCTL,   UK_A,      UK_S,      UK_D,      UK_F,      UK_G,      UK_H,      UK_J,      UK_K,      UK_L,      UK_SCLN,   UK_QUOT,   UK_HASH,   UK_ENT,
         KC_LSHIFT,   UK_BSLS,   UK_Z,      UK_X,      UK_C,      UK_V,      UK_B,      UK_N,      UK_M,      UK_COMM,   UK_DOT,    UK_SLSH,   UK_RSFT,
-        UK_LCTL,   UK_LGUI,   UK_LALT,   UK_SPC,    MO(FL),    UK_BSPC,    UK_DEL,   _______,   TO(NL),    UK_RCTL),
+        UK_LCTL,   UK_LGUI,   UK_LALT,   UK_SPC,    TT(FL),    UK_BSPC,    UK_DEL,   _______,   TO(NL),    UK_RCTL),
 
   /* Keymap FL: Function Layer
    *
@@ -91,8 +91,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
    [FL] = LAYOUT_60_iso_split(
 	//  1          2          3          4          5          6          7          8          9          10         11         12         13         14
-	UK_GRV,    UK_F1,     UK_F2,     UK_F3,     UK_F4,     UK_F5,     UK_F6,     UK_F7,     UK_F8,     UK_F9,     UK_F10,    UK_F11,    UK_F12,    RESET,
-        _______ ,  UK_LPRN,   UK_RPRN,   UK_COLN,   UK_EQL,    _______,   UK_HOME,   UK_PGDN,   UK_PGUP,   UK_END,    UK_PSCR,   _______,   _______,
+	TG(FL),    UK_F1,     UK_F2,     UK_F3,     UK_F4,     UK_F5,     UK_F6,     UK_F7,     UK_F8,     UK_F9,     UK_F10,    UK_F11,    UK_F12,    RESET,
+        UK_GRV,  UK_LPRN,   UK_RPRN,   UK_COLN,   UK_EQL,    _______,   UK_HOME,   UK_PGDN,   UK_PGUP,   UK_END,    UK_PSCR,   _______,   _______,
         UK_LCTL,   UK_LCBR,   UK_RCBR,   _______,   _______,   _______,   UK_LEFT,   UK_DOWN,   UK_UP,     UK_RGHT,  _______,   _______,   _______,   _______,
         KC_CAPS,   _______,   UK_LBRC,   UK_RBRC,   _______,   _______,   _______,   _______,   _______,   _______,  _______,   _______,    KC_CAPS,
         _______,   _______,   _______,   _______,   _______,   _______,   _______,   KC_APP,   _______,   _______),
