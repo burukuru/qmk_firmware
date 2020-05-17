@@ -68,12 +68,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-----------------------------------------------------------'
    */
    [BL] = LAYOUT_60_iso_split(
-	//  1          2          3          4          5          6          7          8          9          10         11         12         13         14
-	    UK_ESC,    UK_1,      UK_2,      UK_3,      UK_4,      UK_5,      UK_6,      UK_7,      UK_8,      UK_9,      UK_0,      UK_MINS,   UK_EQL,    UK_INS,
+        //  1          2          3          4          5          6          7          8          9          10         11         12         13         14
+        UK_ESC,    UK_1,      UK_2,      UK_3,      UK_4,      UK_5,      UK_6,      UK_7,      UK_8,      UK_9,      UK_0,      UK_MINS,   UK_EQL,    UK_INS,
         UK_TAB ,   UK_Q,      UK_W,      UK_E,      UK_R,      UK_T,      UK_Y,      UK_U,      UK_I,      UK_O,      UK_P,      UK_LBRC,   UK_RBRC,
         UK_LCTL,   UK_A,      UK_S,      UK_D,      UK_F,      UK_G,      UK_H,      UK_J,      UK_K,      UK_L,      UK_SCLN,   UK_QUOT,   UK_HASH,   UK_ENT,
         KC_LSHIFT,   UK_BSLS,   UK_Z,      UK_X,      UK_C,      UK_V,      UK_B,      UK_N,      UK_M,      UK_COMM,   UK_DOT,    UK_SLSH,   UK_RSFT,
-        UK_LCTL,   UK_LGUI,   UK_LALT,   UK_SPC,    MO(FL),    UK_BSPC,    _______,   KC_MENU,   TO(NL),    UK_RCTL),
+        UK_LCTL,   UK_LGUI,   UK_LALT,   UK_SPC,    MO(FL),    UK_BSPC,    UK_DEL,   _______,   TO(NL),    UK_RCTL),
 
   /* Keymap FL: Function Layer
    *
@@ -91,11 +91,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
    [FL] = LAYOUT_60_iso_split(
 	//  1          2          3          4          5          6          7          8          9          10         11         12         13         14
-	    UK_GRV,    UK_F1,     UK_F2,     UK_F3,     UK_F4,     UK_F5,     UK_F6,     UK_F7,     UK_F8,     UK_F9,     UK_F10,    UK_F11,    UK_F12,    _______,
-        _______ ,  _______,   _______,   _______,   _______,   _______,   UK_HOME,   UK_PGDN,     UK_PGUP,   UK_END,     UK_PSCR,   _______,   _______,
-        UK_LCTL,   _______,   _______,   _______,   _______,   _______,  UK_LEFT,   UK_DOWN,       UK_UP,     UK_RGHT,  _______,   _______,   _______,   _______,
-        _______,   _______,   _______,   _______,   _______,   _______,  _______,  _______,   UK_HOME,   UK_PGDN, UK_PGUP,   UK_END,    _______,
-        _______,   _______,   _______,   _______,   _______,   UK_DEL,    _______,   _______,   _______,   _______),
+	UK_GRV,    UK_F1,     UK_F2,     UK_F3,     UK_F4,     UK_F5,     UK_F6,     UK_F7,     UK_F8,     UK_F9,     UK_F10,    UK_F11,    UK_F12,    RESET,
+        _______ ,  UK_LPRN,   UK_RPRN,   UK_COLN,   UK_EQL,    _______,   UK_HOME,   UK_PGDN,   UK_PGUP,   UK_END,    UK_PSCR,   _______,   _______,
+        UK_LCTL,   UK_LCBR,   UK_RCBR,   _______,   _______,   _______,   UK_LEFT,   UK_DOWN,   UK_UP,     UK_RGHT,  _______,   _______,   _______,   _______,
+        KC_CAPS,   _______,   UK_LBRC,   UK_RBRC,   _______,   _______,   _______,   _______,   _______,   _______,  _______,   _______,    KC_CAPS,
+        _______,   _______,   _______,   _______,   _______,   _______,   _______,   KC_APP,   _______,   _______),
 
   /* Keymap NL: Numpad Layer
    *
@@ -135,7 +135,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
    [RL] = LAYOUT_60_iso_split(
 	//  1          2          3          4          5          6          7          8          9          10         11         12         13         14
-	    TG(RL),    _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   RESET,
+	TG(RL),    _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   RESET,
         _______,   RGB_TOG,   RGB_MOD,   RGB_HUI,   RGB_HUD,   _______,   _______,   RGB_SAI,   RGB_SAD,   RGB_VAI,   RGB_VAD,   _______,   _______,
         _______,   RGB_STA,   RGB_BRE,   RGB_RAI,   RGB_SWI,   _______,   _______,   RGB_SNA,   RGB_KNI,   RGB_GRA,   RGB_XMS,   _______,   _______,   _______,
         _______,   BL_DEC,    BL_TOGG,   BL_INC,    BL_STEP,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,
